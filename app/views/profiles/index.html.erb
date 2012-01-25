@@ -1,0 +1,37 @@
+<h1>Listing profiles</h1>
+
+<table>
+  <tr>
+    <th>Home depart</th>
+    <th>Work arrive</th>
+    <th>Work depart</th>
+    <th>Home arrive</th>
+    <th>Work city</th>
+    <th>Birthday</th>
+    <th>Sign</th>
+    <th>Minutes late</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @profiles.each do |profile| %>
+  <tr>
+    <td><%= profile.home_depart %></td>
+    <td><%= profile.work_arrive %></td>
+    <td><%= profile.work_depart %></td>
+    <td><%= profile.home_arrive %></td>
+    <td><%= profile.work_city %></td>
+    <td><%= profile.birthday %></td>
+    <td><%= profile.sign %></td>
+    <td><%= profile.minutes_late %></td>
+    <td><%= link_to 'Show', profile %></td>
+    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+    <td><%= link_to 'Destroy', profile, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Profile', new_profile_path %>

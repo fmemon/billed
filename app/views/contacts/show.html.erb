@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cell:</b>
+  <%= @contact.cell %>
+</p>
+
+<p>
+  <b>Work phone:</b>
+  <%= @contact.work_phone %>
+</p>
+
+<p>
+  <b>Home phone:</b>
+  <%= @contact.home_phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @contact.email %>
+</p>
+
+<p>
+  <b>Emergency contact:</b>
+  <%= @contact.emergency_contact %>
+</p>
+
+<p>
+  <b>Emergency phone:</b>
+  <%= @contact.emergency_phone %>
+</p>
+
+<p>
+  <b>Emergency email:</b>
+  <%= @contact.emergency_email %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>

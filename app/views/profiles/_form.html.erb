@@ -1,0 +1,49 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :home_depart %><br />
+    <%= f.time_select :home_depart %>
+  </div>
+  <div class="field">
+    <%= f.label :work_arrive %><br />
+    <%= f.time_select :work_arrive %>
+  </div>
+  <div class="field">
+    <%= f.label :work_depart %><br />
+    <%= f.time_select :work_depart %>
+  </div>
+  <div class="field">
+    <%= f.label :home_arrive %><br />
+    <%= f.time_select :home_arrive %>
+  </div>
+  <div class="field">
+    <%= f.label :work_city %><br />
+    <%= f.text_field :work_city %>
+  </div>
+  <div class="field">
+    <%= f.label :birthday %><br />
+    <%= f.date_select :birthday %>
+  </div>
+  <div class="field">
+    <%= f.label :sign %><br />
+    <%= f.text_field :sign %>
+  </div>
+  <div class="field">
+    <%= f.label :minutes_late %><br />
+    <%= f.number_field :minutes_late %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

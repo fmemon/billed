@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Home depart:</b>
+  <%= @profile.home_depart %>
+</p>
+
+<p>
+  <b>Work arrive:</b>
+  <%= @profile.work_arrive %>
+</p>
+
+<p>
+  <b>Work depart:</b>
+  <%= @profile.work_depart %>
+</p>
+
+<p>
+  <b>Home arrive:</b>
+  <%= @profile.home_arrive %>
+</p>
+
+<p>
+  <b>Work city:</b>
+  <%= @profile.work_city %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @profile.birthday %>
+</p>
+
+<p>
+  <b>Sign:</b>
+  <%= @profile.sign %>
+</p>
+
+<p>
+  <b>Minutes late:</b>
+  <%= @profile.minutes_late %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

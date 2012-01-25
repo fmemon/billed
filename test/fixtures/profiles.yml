@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  home_depart: 2012-01-24 19:35:53
+  work_arrive: 2012-01-24 19:35:53
+  work_depart: 2012-01-24 19:35:53
+  home_arrive: 2012-01-24 19:35:53
+  work_city: MyString
+  birthday: 2012-01-24
+  sign: MyString
+  minutes_late: 1
+
+two:
+  home_depart: 2012-01-24 19:35:53
+  work_arrive: 2012-01-24 19:35:53
+  work_depart: 2012-01-24 19:35:53
+  home_arrive: 2012-01-24 19:35:53
+  work_city: MyString
+  birthday: 2012-01-24
+  sign: MyString
+  minutes_late: 1
